@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import footerImgMobile from "/src/assets/images/mobile/image-footer.jpg";
+import footerImgTablet from "/src/assets/images/tablet/image-footer.jpg";
+import footerImgDesktop from "/src/assets/images/desktop/image-footer.jpg";
 
 export const StyledFooterContent = styled.div`
   div {
@@ -31,7 +34,7 @@ export const StyledFooterContent = styled.div`
       rgba(77, 150, 169, 0.9),
       rgba(77, 150, 169, 0.9)
     ),
-    url(./src/assets/images/mobile/image-footer.jpg) top center no-repeat;
+    url(${footerImgMobile}) top center no-repeat;
   background-size: cover;
   @media screen and (min-width: 48rem) {
     background: linear-gradient(
@@ -39,7 +42,7 @@ export const StyledFooterContent = styled.div`
         rgba(77, 150, 169, 0.9),
         rgba(77, 150, 169, 0.9)
       ),
-      url(./src/assets/images/tablet/image-footer.jpg) top center no-repeat;
+      url(${footerImgTablet}) top center no-repeat;
     background-size: cover;
   }
   @media screen and (min-width: 64rem) {
@@ -48,7 +51,7 @@ export const StyledFooterContent = styled.div`
         rgba(77, 150, 169, 0.9),
         rgba(77, 150, 169, 0.9)
       ),
-      url(./src/assets/images/desktop/image-footer.jpg) top center no-repeat;
+      url(${footerImgDesktop}) top center no-repeat;
     background-size: cover;
     padding-inline: 8rem;
     padding-block: 11.2rem;
